@@ -32,7 +32,7 @@ export class DataService {
         id = user.id;
       }
     }
-    newUser.id= id+1;
+    newUser.id = id+ 1;
     this.users.push(newUser);
     return of(newUser);
   }
@@ -46,11 +46,11 @@ export class DataService {
 
     const capacity1 = new LayoutCapacity();
     capacity1.layout = Layout.THEATER;
-    capacity1.capacity = 50;
+    capacity1.capacity = 30;
 
     const capacity2 = new LayoutCapacity();
     capacity2.layout = Layout.USHAPE;
-    capacity2.capacity = 20;
+    capacity2.capacity = 10;
 
     room1.capacities.push(capacity1);
     room1.capacities.push(capacity2);
@@ -73,13 +73,13 @@ export class DataService {
 
     const user1 = new User();
     user1.id = 1;
-    user1.name = 'Matt';
+    user1.name = 'Matty';
     const user2 = new User();
     user2.id = 2;
-    user2.name = 'Diana';
+    user2.name = 'Lukasz';
     const user3 = new User();
     user3.id = 3;
-    user3.name = 'Suzanne';
+    user3.name = 'Suzi';
     this.users.push(user1);
     this.users.push(user2);
     this.users.push(user3);
